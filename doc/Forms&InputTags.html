@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{
+            background-color: bisque;
+        }
+    </style>
+    <title>Forms and Input Tags</title>
+</head>
+
+<body>
+    <h2>HTML Form for Employee</h2>
+    <form action="backend.php">
+
+        <div>
+            Name: <input type="text" name="myname">
+    </div>
+    <br>
+    <div>
+        Role: <input type="text" name="myrole">
+    </div>
+    <br>
+    <div>
+        Email: <input type="email" name="myemail">
+    </div>
+
+    <br>
+    <div>
+        DOB: <input type="date" name="mydate">
+    </div>
+    <br>
+    <div>
+        Expected Salary: <input type="number" name="mysalary">
+    </div>
+    <br>
+    
+    <!-- label are used to select the element of html and enter data in it -->
+    <label for="pJob">Past Job if any:</label>
+    <br>
+    <div>
+        <input type="text" name="myjob" id="pJob">
+    </div>
+    
+    <br>
+    <div>
+        <!-- if written checked then the checkbox will be checked by default -->
+        Are you a robot: <input type="checkbox" name="myrobot" checked>
+    </div>
+    <br>
+    <div>
+        Are you an Indian: <input type="checkbox" name="mycountry">
+    </div>
+    <br>
+    <div>
+        Gender: <br>Male: <input type="radio" name="mygender"> Female: <input type="radio" name="mygender"> Other:
+        <input type="radio" name="mygnder">
+    </div>
+    <br>
+    <div>
+        Describe Yourself: <br><textarea name="mydescription" id="" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <label for="mode">Mode of Transporation</label>
+    <div>
+        <select name="mymode" id="mode">
+            <!-- selected is same as checked and by deafult the 1st option is shown -->
+            <option value="n" selected>None</option>
+            <option value="b">Bike</option>
+            <option value="c">Car</option>
+            <option value="pt">Public Transport</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <input name="submit" type="submit" value="Submit">
+        <input name="reset" type="reset" value="Reset">
+    </div>
+    
+    <!-- NOTE: find how to get checkbox to select multiple choices in one checkbox -->
+    <!-- always place reset or submit button in form tag otherwise your buttons won't work -->
+</form>
+</body>

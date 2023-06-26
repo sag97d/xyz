@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscle House</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet"> -->
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            /* background-color: black; */
+            background: url('img/bg.jpg');
+            background-size: 1400px, 200px;
+            /* font-family: 'Bruno Ace SC', cursive; */
+
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 14px;
+            top: 18px;
+            text-align: center;
+            color: grey;
+            font-size: 10px;
+            line-height: 15px;
+            background-color: black;
+        }
+
+        .left img {
+            display: block;
+            width: 98px;
+            height: 59px;
+            /* filter function will with invert will invert the img colors like black turns to white...  */
+            /* filter: invert(100%); */
+
+        }
+
+        .mid {
+            /* when using inline-block magin doesn't work in terms of px instead it is working in %age values */
+            /* display: inline-block; */
+            border: 2px solid rgba(103, 64, 10, 0.673);
+            display: block;
+            width: 600px;
+            margin-top: 18px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgba(67, 30, 8, 0.473);
+            border-radius: 30px;
+
+        }
+
+        .right {
+            border: 2px solid #21334fb5;
+            display: inline-block;
+            position: absolute;
+            /* top: 18px; */
+            bottom: -85px;
+            right: 4px;
+            width: 250px;
+            border-radius: 16px;
+        }
+
+        .right h4 {
+            color: rgb(105, 211, 160);
+            margin-top: 2px;
+            text-align: center;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: cyan;
+            margin: 30px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        .navbar li a:active {
+            color: rgb(215, 207, 52);
+        }
+
+        /* .navbar li a:visited {
+            color: blueviolet;
+        } */
+
+        .btn {
+            background-color: gray;
+            /* margin: 0px, 100px; */
+            padding: 4px;
+            margin-left: 20px;
+            margin-right: 10px;
+            margin-top: -5px;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+        .btn a{
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: darkgrey;
+        }
+
+        .container {
+            border: 2px solid #21334fb5;
+            margin-top: 48px;
+            margin-left: 14px;
+            padding: 10px;
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        .formgroup {
+            margin: 3px;
+        }
+
+        .button {
+            background-color: rgb(142 16 162);
+            padding: 4px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-left: 125px;
+            margin-top: 15px;
+            width: 183px;
+        }
+
+        .formgroup {
+            display: block;
+            width: 169px;
+            padding: 11px;
+            /* border: 2px solid red; */
+            margin-left: 118px;
+            margin-top: 30px;
+        }
+
+        .formgroup input {
+
+            text-align: center;
+            background-color: #11082bb5;
+            color: antiquewhite;
+        }
+
+        .container h1 {
+
+            color: burlywood;
+            text-align: center;
+        }
+
+        .container h2 {
+
+            text-align: center;
+            color: cornsilk;
+
+        }
+
+        .container h3 {
+
+            text-align: center;
+            color: grey;
+        }
+        .topnav {
+            border: 2px solid rgba(103, 64, 10, 0.673);
+            display: inline-block;
+            position: absolute;
+            top: 22px;
+            right: 15px;
+            width: 161px;
+            border-radius: 30px;
+            background-color: rgba(67, 30, 8, 0.473);
+        }
+        .topnav input{
+            background-color: #0d2f40c9;
+            margin: 8px;
+            padding: 4px;
+            color: cyan;
+            border-radius: 30px;
+            width: 90px;
+        }
+        .icon{
+            border: 2px solid grey;
+            background-color: #0d2f40c9;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="demo.php">
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left"><img src="img/images1.jpg" alt="GYM Logo">Muscle House</div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="doc/Muscle House.docx">About Us</a></li>
+                <li><a href="https://www.calculator.net/body-fat-calculator.html">Fitness Calculator</a></li>
+                <li><a href="doc/contact us.txt">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <h4>Our Products:</h4>
+            <button class="btn"><a href="https://www.flipkart.com/search?q=muscleblaze&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off">Supplements</a></button>
+            <button class="btn"><a href="https://www.ebay.com.au/b/Golds-Gym-Clothing-for-Men/1059/bn_74916030">Merchandise</a></button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>[Muscle House]</h1>
+        <h2>"Get In. Get Fit."</h2>
+        <h3>Fill this form now: "bring change to your life and body"</h3>
+        <!-- <form action="demo.php"></form> -->
+
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter your name">
+            <!-- name attribute will be used in JS for reference in submitting a form -->
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="Enter your address">
+        </div>
+        <div class="formgroup">
+            <input type="number" name="" placeholder="Enter your age">
+        </div>
+        <div class="formgroup">
+            <input type="number" name="" placeholder="Enter your contact no.">
+        </div>
+        <!-- <button class="button">Submit</button> -->
+        <input name="submit" type="submit" value="Submit" class="button">
+        <input name="reset" type="reset" value="Reset" class="button">
+        <!-- The value are sent during form submission later used in JS -->
+    </div>
+    <div class="topnav">
+        <input type="text" placeholder="Search.." >
+        <button type="submit" class="icon"><i class="fa fa-search"></i></button>
+      </div>
+    </form>
+</body>
+
+</html>
